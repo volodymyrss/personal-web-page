@@ -48,13 +48,19 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: web.volodymyrsavchenko.com
+    - host: volodymyrsavchenko.com
+      paths:
+      - /
+    - host: www.volodymyrsavchenko.com
       paths:
       - /
   tls:
-    - secretName: web-tls
+    - secretName: w-tls
       hosts:
-        - web.volodymyrsavchenko.com
+        - volodymyrsavchenko.com
+    - secretName: www-tls
+      hosts:
+        - www.volodymyrsavchenko.com
 
   #  - secretName: chart-example-tls
   #    hosts:
