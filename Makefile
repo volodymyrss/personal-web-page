@@ -2,7 +2,7 @@ TAG=$(shell git describe --always --tags)
 
 
 deploy: push
-	helm upgrade personal-web-page . --set tag=$(TAG)
+	helm upgrade personal-web-page . --set image.tag=$(TAG)
 
 
 push: build
