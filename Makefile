@@ -9,7 +9,7 @@ push: build
 	docker push volodymyrsavchenko/personalsite:$(TAG)
 
 build:
-	python src/build.py && cp -rfv src/{images,files,styles} build/html
+	python src/build.py && cp -rfv src/images src/files src/styles build/html
 	docker build . -t volodymyrsavchenko/personalsite:$(TAG)
 
 
