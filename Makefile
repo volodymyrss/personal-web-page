@@ -15,3 +15,7 @@ build:
 
 run:
 	docker run --rm --name ps -p 8080:80 volodymyrsavchenko/personalsite:$(TAG)
+
+
+watch:
+	inotify-hookable --watch-directories src/ -c 'python src/build.py && cp -rfv src/images src/files src/styles build/html'
