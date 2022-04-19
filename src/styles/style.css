@@ -5,7 +5,6 @@ body {
 
 div.hidden {
 	font-size: 10px;
-	font-family: Courier, monospace;
 	font-weight: bold;
 	color: #051005;
 	background: #051005;
@@ -117,10 +116,38 @@ div#preload {
 	display: none;
 }
 
+/*  */
 
 p.quote {
 	margin-left: 10%;
 	margin-right: 10%;
-	/* width: 100%; */
 	font-style: italic;
+	color: #9edf8b;
 }
+
+
+details {
+	user-select: none;
+  }
+  
+details>summary span.icon {
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s;
+	margin: 3px;
+	/* margin-left: auto; */
+}
+  
+details[open] summary span.icon {
+	transform: rotate(90deg);
+}
+
+summary {
+	display: flex;
+	cursor: pointer;
+}
+  
+summary::-webkit-details-marker {
+	display: none;
+}
+  
