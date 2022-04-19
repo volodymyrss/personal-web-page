@@ -56,23 +56,15 @@
               </div>
             </td>
 
-            
+            {% for tab in tabs %}
             <td>
               <div class="xterm">
-                <a href="science.html" class="xterm">
-                  Science
+                <a href="{{ tab.lower() }}.html" class="xterm">
+                  {{ tab }}
                 </a>
               </div>
             </td>
-            
-            <td>
-              <div class="xterm">
-                <a href="software.html" class="xterm">
-                  Software
-                </a>
-              </div>
-            </td>
-            
+            {% endfor %}
 
             <td>
               <div class="xterm">
@@ -84,7 +76,7 @@
 
           </tr>
           <tr>
-            <td colspan=5>
+            <td colspan={{ menu_cols }}>
 
               <div id="preload">
                 <img src="images/photo.gif">
@@ -102,12 +94,8 @@
                   <td width="100%">
                     <div class="xterm_pad">
 
-                      
-
-<a href="https://github.com/volodymyrss/integral-spi-acs-data" class="xterm1"> Services to access SPI-ACS data</a>.
-<br>
-
- 
+                      {% block content %}
+                      {% endblock content %}
                     </div>
                   </td>
                 </tr>
@@ -119,12 +107,12 @@
           </tr>
 
           <tr>
-            <td class="footer" colspan=5>
-              Volodymyr Savchenko 2022
+            <td class="footer" colspan={{ menu_cols }}>
+              Volodymyr Savchenko {{ now.strftime("%Y") }}
             </td>
           </tr>
           <tr>
-            <td class="footer1" colspan=5>
+            <td class="footer1" colspan={{ menu_cols }}>
               <!--please note that this page is a placeholder!-->
             </td>
           </tr>

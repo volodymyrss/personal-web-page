@@ -13,4 +13,4 @@ build:
 
 
 run:
-	docker run -p 8000:80 volodymyrsavchenko/personalsite
+	docker run -p 8080:80 volodymyrsavchenko/personalsite
