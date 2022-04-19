@@ -29,7 +29,7 @@ div.xterm {
 	border-width:1;
 	border-style:solid;
 	border-color:#808080;
-	color: #00D000;
+	color: #04d804;
 	margin: 10px;
 	padding: 3px;
 }
@@ -39,7 +39,7 @@ div.xterm_pad {
 	border-width:1;
 	border-style:solid;
 	border-color:#808080;
-	color: #00D000;
+	color:#02F000;
 	margin: 10px;
 	padding: 20px;
 	font-size: large;
@@ -151,3 +151,12 @@ summary::-webkit-details-marker {
 	display: none;
 }
   
+
+
+
+.tab-content {
+    display: none;
+}
+.tab-content:target {
+    display: block;
+}

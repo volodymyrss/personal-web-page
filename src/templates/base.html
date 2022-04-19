@@ -4,7 +4,7 @@
 
   <meta name="google-site-verification" content="wb_aj56xdpJhmI5x6y0rZvZBpMCaJ_qZjxH5Zxq8Zqk" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
+
   <link rel="stylesheet" href="styles/style.css">
   <link rel="shortcut icon" href="https://www.isdc.unige.ch/~savchenk/favicon.ico?v=2">
 
@@ -32,10 +32,10 @@
     <tr>
       <td class="sides">
       </td>
-      <td>
 
+      <td>
         <table width="100%">
-          <tr>
+          <tr height="10px">
             <td>
             </td>
           </tr>
@@ -91,7 +91,7 @@
                         onmouseout="this.src='images/photo.png'" width="150px" height="150px">
                     </div>
                   </td>
-                  <td width="100%">
+                  <td>
                     <div class="xterm_pad">
 
                       {% block content %}
@@ -101,11 +101,9 @@
                 </tr>
               </table>
 
-            </td>
-            <td width="20%">
-            </td>
-          </tr>
 
+            </td>            
+          </tr>
           <tr>
             <td class="footer" colspan={{ menu_cols }}>
               Volodymyr Savchenko {{ now.strftime("%Y") }}
@@ -117,13 +115,15 @@
             </td>
           </tr>
         </table>
+    
+      </td>
 
-        <div class="hidden">
-          <!--hidden! dont look here!-->
-          <!-- <iframe style="display:none" src="https://isdc.unige.ch/~savchenk/cgi/logrequest.pl?source=myhomepage" frameborder=0></iframe> -->
-        </div>
-
-
+      <td class="sides">
+      </td>
+    </tr>
+  </table>
+      
+        
 </body>
 
 </html>

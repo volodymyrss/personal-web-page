@@ -16,7 +16,7 @@ if __name__ == "__main__":
         'tabs': {
             'science': 'Science',
             'software': 'Software',
-            'ukraine': 'Ukraine <img src="images/flag-ukraine.png" height="15px"></img>'
+            'ukraine': 'Ukraine <img src="images/flag-ukraine.png" height="15px" width="20px"></img>'
         },
         'now': datetime.now()
     }
