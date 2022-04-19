@@ -9,8 +9,9 @@ push: build
 	docker push volodymyrsavchenko/personalsite:$(TAG)
 
 build:
+	python src/build.py
 	docker build . -t volodymyrsavchenko/personalsite:$(TAG)
 
 
 run:
-	docker run -p 8080:80 volodymyrsavchenko/personalsite
+	docker run --rm --name ps -p 8080:80 volodymyrsavchenko/personalsite:$(TAG)
