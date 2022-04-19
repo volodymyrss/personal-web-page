@@ -1,5 +1,4 @@
 body {
-	font-size: 18px;
 	font-family: Courier, monospace;
 	background: #051005;
 }
@@ -43,7 +42,8 @@ div.xterm_pad {
 	border-color:#808080;
 	color: #00D000;
 	margin: 10px;
-	padding: 6px;
+	padding: 20px;
+	font-size: large;
 }
 
 div.xterm:hover {
@@ -115,4 +115,12 @@ hr {
 
 div#preload {
 	display: none;
+}
+
+
+p.quote {
+	margin-left: 10%;
+	margin-right: 10%;
+	/* width: 100%; */
+	font-style: italic;
 }

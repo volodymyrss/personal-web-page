@@ -13,10 +13,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     data = {
-        'tabs': [
-            'Science',
-            'Software'
-        ],
+        'tabs': {
+            'science': 'Science',
+            'software': 'Software',
+            'ukraine': 'Ukraine <img src="images/flag-ukraine.png" height="15px"></img>'
+        },
         'now': datetime.now()
     }
     data['menu_cols'] = len(data['tabs']) + 3
