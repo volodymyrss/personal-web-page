@@ -1,3 +1,3 @@
 FROM nginx
 
-ADD src/* /usr/share/nginx/html/
+COPY src/ /usr/share/nginx/html/
