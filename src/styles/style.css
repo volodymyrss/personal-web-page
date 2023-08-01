@@ -55,6 +55,18 @@ table.bigframe {
 	padding: 10;
 }
 
+a {
+	color: #00F500;
+	text-decoration:none;
+	border: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration:underline;
+	border: none;
+}
+
 a.xterm {
 	color: #00F500;
 	text-decoration:none;
